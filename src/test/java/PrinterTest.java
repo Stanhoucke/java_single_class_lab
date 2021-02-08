@@ -28,5 +28,6 @@ public class PrinterTest {
     public void canPrint(){
         printer.print(5, 2);
         assertEquals(90, printer.getPaper());
+        assertEquals(490, printer.getTonerVolume());
     }
 }
