@@ -1,12 +1,18 @@
 public class Printer {
     private int paper;
+    private int tonerVolume;
 
-    public Printer(int paper){
+    public Printer(int paper, int tonerVolume){
         this.paper = paper;
+        this.tonerVolume = tonerVolume;
+    }
+
+    public int getTonerVolume() {
+        return this.tonerVolume;
     }
 
     public int getPaper() {
-        return paper;
+        return this.paper;
     }
 
     public void print(int numberOfPages, int numberOfCopies){
