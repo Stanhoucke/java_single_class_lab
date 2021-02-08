@@ -9,13 +9,10 @@ public class Printer {
         return paper;
     }
 
-    public String print(int numberOfPages, int numberOfCopies){
+    public void print(int numberOfPages, int numberOfCopies){
         int totalPages = numberOfPages * numberOfCopies;
         if (totalPages <= this.paper){
             this.paper -= totalPages;
-            return "Printed!";
-        } else {
-            return "Not enough paper";
         }
     }
 }
